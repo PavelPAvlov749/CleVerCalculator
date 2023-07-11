@@ -17,29 +17,6 @@ let operator = null
 display.innerHTML = "|"
 display.id = "Blink"
 
-// KEYBOARD INPUTS HANDLER 
-
-// Pressed key
-let key = null
-
-
-
-document.addEventListener("keydown", (event) => {
-    // if pressed button mathes any number 
-    console.log(event.keyCode)
-    if (event.keyCode <= 57 && event.keyCode >= 48 && operator === null) {
-        firstNum += event.key
-        display.innerHTML = firstNum
-        display.id = ""
-    }
-    if (event.keyCode <= 57 && event.keyCode >= 48) {
-        secondNum += event.key
-        display.innerHTML = secondNum
-    }
-    // Anotherwiswe do nothing
-})
-
-
 
 
 
