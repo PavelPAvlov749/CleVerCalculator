@@ -1,0 +1,97 @@
+body {
+    /* background: linear-gradient(#78234e, #4f1e65); */
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+}
+
+.calculator-container__display {
+    padding: 5px;
+    color: rgb(202, 159, 202);
+    background-color: rgb(57, 47, 60);
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: x-large;
+    width: 270px;
+    /* border-radius: 10px; */
+    margin-bottom: 10px;
+}
+#Blink {
+    animation: blink 0.7s step-start infinite ;
+}
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
+}
+
+.calculator-container__input-buttons_container {
+    display: flex;
+    flex-direction: row;
+    width: 290px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.calculator-container__input-buttons_container__digits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0%;
+    width: 210px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.calculator-container__input-buttons_container li {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: large;
+    margin: 5px;
+    background-color: rgb(73, 50, 84);
+    list-style-type: none;
+}
+
+.calculator-container__input-buttons_container li:hover {
+    background-color: rgb(140, 87, 164);
+
+    transition: background-color 0.3s ease;
+
+}
+
+.calculator-container__input-buttons_container li:active {
+    transform: scale(1.1);
+    transition: transform 0.1ss ease;
+}
+
+.calculator-container__input-buttons_container__operators {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    width: max-content;
+
+}
