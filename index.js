@@ -46,7 +46,6 @@ for (let i = 0; i < operators.length; i++) {
         display.innerHTML = secondNum
     })
 }
-
 // ADDING EQUALS BUTTON CLLICK HANDLER 
 equals_button.addEventListener("click", () => {
 
@@ -70,7 +69,7 @@ equals_button.addEventListener("click", () => {
     }
     if (operator === "/") {
         // IF SOME ARGUMNEWAS DIVIDED BY ZERO
-        if (firstNum || secondNum === "0") {
+        if (firstNum === "0" || secondNum === "0") {
             result = "ERROR : Can`t divide by 0"
             display.innerHTML = result
             firstNum = "";
@@ -83,10 +82,7 @@ equals_button.addEventListener("click", () => {
         }
 
     }
-
-
 })
-
 
 // ADDING CLEAR BUTTON CLICK HANDLER
 clear_button.addEventListener("click", () => {
